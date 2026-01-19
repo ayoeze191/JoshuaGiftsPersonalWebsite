@@ -101,19 +101,19 @@ export default function Header() {
             <a href="https://www.instagram.com/_giftjoshua?utm_source=qr&igsh=MWZzcm5vYTBjd3k4bQ==">
               {" "}
               <FaInstagram
-                size={22}
-                className="text-blue-600 hover:text-blue-700 transition cursor-pointer text-[14px] md:text-base"
+                size={18}
+                className="text-blue-600 hover:text-blue-700 transition cursor-pointer md:text-base"
               />
             </a>
             <a>
               <FaTwitter
-                size={22}
+                size={18}
                 className="text-blue-600 hover:text-blue-700 transition cursor-pointer text-[14px] md:text-base"
               />
             </a>
             <a href="https://www.linkedin.com/in/gift-joshua-436aa11a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
               <FaLinkedin
-                size={22}
+                size={18}
                 className="text-blue-600 hover:text-blue-700 transition cursor-pointer text-[14px] md:text-base"
               />
             </a>
