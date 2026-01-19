@@ -2,6 +2,8 @@
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Hamburger from "./Hambuger";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import MobileNav from "./MobileNavigation";
 
 const firstName = ["J", "o", "s", "h", "u", "a"];
 const lastName = ["G", "i", "f", "t"];
@@ -22,13 +24,14 @@ export default function Header() {
     y: [0, -4, 0],
     transition: { duration: 1, repeat: Infinity, ease: "easeInOut" },
   };
+  const [open, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-blue-50 font-sans">
+    <header className="fixed top-0 left-0 w-full z-[999] bg-white/90 backdrop-blur-md border-b border-blue-50 font-sans">
       <div className="max-w-5xl mx-auto flex items-center justify-between py-4 px-6">
-        <Hamburger />
-
+        <Hamburger isOpen={open} toggle={() => setIsOpen(!open)} />
         {/* BRAND */}
+        <MobileNav isOpen={open} />
         <div
           className="flex items-center gap-1 text-2xl font-bold text-[#222]"
           style={{ fontFamily: "var(--font-indie-flower)" }}

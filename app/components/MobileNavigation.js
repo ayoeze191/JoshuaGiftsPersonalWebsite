@@ -6,10 +6,16 @@ export default function MobileNav({ isOpen }) {
       ${isOpen ? "translate-x-0" : "translate-x-full"}`}
     >
       <ul className="p-6 space-y-6 text-lg">
-        <li>Home</li>
-        <li>About</li>
-        <li>Books</li>
-        <li>Contact</li>
+        <li className="cursor-pointer text-[#333] hover:text-blue-500">Home</li>
+        <li className="cursor-pointer text-[#333] hover:text-blue-500">
+          About
+        </li>
+        <li className="cursor-pointer text-[#333] hover:text-blue-500">
+          Books
+        </li>
+        <li className="cursor-pointer text-[#333] hover:text-blue-500">
+          Contact
+        </li>
       </ul>
     </nav>
   );

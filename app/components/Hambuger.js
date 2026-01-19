@@ -2,7 +2,7 @@ export default function Hamburger({ isOpen, toggle }) {
   return (
     <button
       onClick={toggle}
-      className="relative w-6 order-3  md:hidden h-4 flex flex-col justify-between items-center z-50"
+      className="relative hover:cursor-pointer w-6 order-3  md:hidden h-4 flex flex-col justify-between items-center z-50"
       aria-label="Toggle navigation"
     >
       <span
