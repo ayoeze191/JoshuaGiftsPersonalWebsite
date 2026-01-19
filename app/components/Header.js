@@ -97,7 +97,7 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 md:gap-4">
             <a href="https://www.instagram.com/_giftjoshua?utm_source=qr&igsh=MWZzcm5vYTBjd3k4bQ==">
               {" "}
               <FaInstagram
