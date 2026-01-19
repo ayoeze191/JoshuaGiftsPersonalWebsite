@@ -9,7 +9,6 @@ export default function Home() {
       {/* <div className="w-20 mx-auto bg-blue-200 rounded-[40px] h-[15px] py-1 px-1">
         <div className="bg-blue-700 rounded-full w-2 h-full"></div>
       </div> */}
-      <Header />
       <OutNow />
       <Author />
       {/* <Main /> */}

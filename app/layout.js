@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Indie_Flower } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
+import Header from "./components/Header";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${indieFlower.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
