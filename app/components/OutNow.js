@@ -69,11 +69,11 @@ export default function OutNow() {
 
         {/* CTA */}
         <motion.a
-          href="https://selar.com/1181871778"
+          href="https://selar.com/m/GiftJoshua"
           whileHover={{ y: -2 }}
           className="inline-block mt-6 font-sans font-black text-blue-700 border-b-2 border-dotted border-blue-700"
         >
-          Get the Book → &nbsp;
+          Get a copy today → &nbsp;
         </motion.a>
       </div>
 
