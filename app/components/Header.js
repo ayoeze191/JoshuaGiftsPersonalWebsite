@@ -92,7 +92,7 @@ export default function Header() {
         {/* RIGHT */}
         <div className="flex items-center gap-6">
           <nav className="hidden md:flex items-center gap-6">
-            {["Book", "Author", "Sponsorship", "Contact"].map((item) =>
+            {["Book", "Sponsorship", "Author", "Contact"].map((item) =>
               item !== "Contact" ? (
                 <span
                   style={{

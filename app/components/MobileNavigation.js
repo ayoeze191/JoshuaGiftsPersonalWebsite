@@ -14,9 +14,9 @@ export default function MobileNav({ isOpen }) {
         <li className="cursor-pointer text-[#333] hover:text-blue-500">
           Sponsorship
         </li>
-        <li className="cursor-pointer text-[#333] hover:text-blue-500">
+        <button className=" w-full text-[#333] hover:text-blue-500 bg-blue-500  cursor-pointer hover:bg-white hover:shadow rounded-lg  p-2">
           Contact
-        </li>
+        </button>
       </ul>
     </nav>
   );
