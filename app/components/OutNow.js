@@ -53,13 +53,13 @@ export default function OutNow() {
 
         {/* TITLE */}
         <h2 className="text-[2.2rem] leading-tight font-sans font-black text-[#222]">
-          The Girl Who Almost Gave Up <br />
+          The Girl Who Almost Gave Up - <br />
           <span className="text-blue-600">Lisa’s Story</span>
         </h2>
 
         {/* SHORT DESCRIPTION */}
         <p className="mt-5 font-sans text-[#333] font-semibold">
-          Lisa's story A faith-inspired story about a twelve-year-old girl
+          Lisa's story is a faith-inspired story about a twelve-year-old girl
           growing up in a rural Nigerian community, facing neglect, rejection,
           and emotional pain.
         </p>
