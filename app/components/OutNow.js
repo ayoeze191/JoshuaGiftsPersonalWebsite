@@ -54,9 +54,9 @@ export default function OutNow() {
 
         {/* SHORT DESCRIPTION */}
         <p className="mt-5 font-sans text-[#333] font-semibold">
-          A faith-inspired story about a twelve-year-old girl growing up in a
-          rural Nigerian community, facing neglect, rejection, and emotional
-          pain.
+          Lisa's story A faith-inspired story about a twelve-year-old girl
+          growing up in a rural Nigerian community, facing neglect, rejection,
+          and emotional pain.
         </p>
 
         {/* LONG DESCRIPTION */}

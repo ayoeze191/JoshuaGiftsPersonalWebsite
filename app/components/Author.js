@@ -36,20 +36,20 @@ export default function Author() {
           </p>
 
           {/* MAIN TEXT */}
-          <p className="mt-5 text-[#333] leading-relaxed font-sans font-semibold">
+          {/* <p className="mt-5 text-[#333] leading-relaxed font-sans font-semibold">
             My name is Gift Joshua, and I write because I believe that words can
             heal hearts. Working with children and teenagers over the years has
             made me realize that many children who struggle academically,
             emotionally, socially, and even physically do so not because they
             don’t have what it takes to succeed, but because they lack love and
             affirmation from people who should give it freely.
-          </p>
-
+          </p> */}
           {/* SECOND PARAGRAPH */}
           <p className="mt-4 text-[#444] leading-relaxed font-sans">
-            My writing is inspired by real-life experiences and is driven by a
-            desire to restore hope, build identity, and nurture confidence in
-            young minds through stories that speak to the heart and the soul.
+            Gift Joshua is a writer and social impact advocate, who is committed
+            to helping children and teenagers discover their identity and walk
+            in purpose. She does this through mentorship, trainings and
+            counseling
           </p>
 
           {/* CTA */}
