@@ -90,14 +90,24 @@ export default function Header() {
         {/* RIGHT */}
         <div className="flex items-center gap-6">
           <nav className="hidden md:flex gap-6">
-            {["Book", "Author"].map((item) => (
-              <span
-                key={item}
-                className="cursor-pointer font-bold text-[#333] hover:text-blue-600 transition"
-              >
-                {item}
-              </span>
-            ))}
+            {["Book", "Author", "Contact"].map((item) =>
+              item !== "Contact" ? (
+                <span
+                  key={item}
+                  className="cursor-pointer font-bold text-[#333] hover:text-blue-600 transition"
+                >
+                  {item}
+                </span>
+              ) : (
+                <a
+                  href="mailto:yourname@example.com"
+                  key={item}
+                  className="cursor-pointer font-bold hover:text-[#333] text-blue-600 transition txte"
+                >
+                  {item}
+                </a>
+              ),
+            )}
           </nav>
 
           <div className="flex items-center gap-3 md:gap-4">
