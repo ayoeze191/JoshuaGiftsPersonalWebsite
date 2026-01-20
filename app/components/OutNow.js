@@ -73,7 +73,7 @@ export default function OutNow() {
           whileHover={{ y: -2 }}
           className="inline-block mt-6 font-sans font-black text-blue-700 border-b-2 border-dotted border-blue-700"
         >
-          Buy Now →
+          Get the Book → &nbsp;
         </motion.a>
       </div>
 
