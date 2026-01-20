@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Indie_Flower } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
+import { AppProvider } from "./components/context/AppContext";
 import Header from "./components/Header";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,8 +33,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${indieFlower.variable} antialiased`}
       >
-        <Header />
-        {children}
+        <AppProvider>
+          <Header />
+          {children}
+        </AppProvider>
       </body>
     </html>
   );

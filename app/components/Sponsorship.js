@@ -1,9 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 import { FaClipboardCheck } from "react-icons/fa";
+import { useSectionInView } from "./hooks/useSectionView";
+
 export default function Sponsorship() {
+  const sectionRef = useSectionInView("Sponsorship");
+
   return (
-    <section className="mx-auto w-full mt-24 py-24 md:mt-40  bg-gradient-to-r from-blue-500 to-blue-600">
+    <section className="mx-auto w-full mt-24  py-24 md:mt-40  bg-gradient-to-r from-blue-500 to-blue-600">
+      <div ref={sectionRef} className="h-px" />
       <div className="max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* TEXT SECTION */}

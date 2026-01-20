@@ -4,11 +4,13 @@ import Hamburger from "./Hambuger";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import MobileNav from "./MobileNavigation";
+import { useAppContext } from "./context/AppContext";
 
 const firstName = ["J", "o", "s", "h", "u", "a"];
 const lastName = ["G", "i", "f", "t"];
 
 export default function Header() {
+  const { currentSection, changeSection } = useAppContext();
   const staggerDuration = 0.2;
 
   const letterVariants = {
@@ -89,23 +91,30 @@ export default function Header() {
 
         {/* RIGHT */}
         <div className="flex items-center gap-6">
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex items-center gap-6">
             {["Book", "Author", "Sponsorship", "Contact"].map((item) =>
               item !== "Contact" ? (
                 <span
+                  style={{
+                    color: currentSection == item && "#155dfc",
+                  }}
                   key={item}
                   className="cursor-pointer font-bold text-[#333] hover:text-blue-600 transition"
                 >
                   {item}
                 </span>
               ) : (
-                <a
-                  href="mailto:yourname@example.com"
+                <button
                   key={item}
-                  className="cursor-pointer font-bold hover:text-[#333] text-blue-600 transition txte"
+                  className="bg-blue-500 text-white cursor-pointer hover:bg-white hover:shadow rounded-lg  p-2 "
                 >
-                  {item}
-                </a>
+                  <a
+                    href="mailto:yourname@example.com"
+                    className="cursor-pointer font-bold hover:text-blue-500  text-white  transition txte"
+                  >
+                    {item}
+                  </a>
+                </button>
               ),
             )}
           </nav>

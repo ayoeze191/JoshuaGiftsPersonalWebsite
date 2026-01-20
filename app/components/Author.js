@@ -1,24 +1,27 @@
 "use client";
 
-import { useEffect } from "react";
 import AOS from "aos";
 import Image from "next/image";
-
+import { useEffect } from "react";
+import { useSectionInView } from "./hooks/useSectionView";
 export default function Author() {
+  const sectionRef = useSectionInView("Author");
   useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
       easing: "ease-out-cubic",
     });
-  }, []);
+  });
   return (
     <section className="max-w-5xl mx-auto px-6 mt-24  md:mt-40">
+      <div ref={sectionRef} className="h-px" />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* IMAGE */}
         <div
           //   data-aos="flip-right"
-          className="relative  w-full h-[420px] transition-all duration-300 hover:scale-[1.02] hover:rotate-[1deg]"
+          className="relative  w-full h-105 transition-all duration-300 hover:scale-[1.02] hover:rotate-1"
         >
           <Image
             src="/gift.jpeg"

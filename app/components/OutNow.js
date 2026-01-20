@@ -2,11 +2,16 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import { useSectionInView } from "./hooks/useSectionView";
+
 const words = ["Out", "Now"];
 
 export default function OutNow() {
+  const sectionRef = useSectionInView("Book");
   return (
     <div className="mx-auto max-w-5xl w-full mt-16 md:mt-32 flex flex-col md:flex-row gap-10 px-6">
+      <div ref={sectionRef} className="h-px" />
+
       {/* TEXT SECTION */}
       <div className="md:w-1/2">
         {/* OUT NOW */}
