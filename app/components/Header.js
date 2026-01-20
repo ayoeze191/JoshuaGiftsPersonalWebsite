@@ -49,7 +49,7 @@ export default function Header() {
                 key={i}
                 variants={letterVariants}
                 animate={bounceAnimation} // start bouncing after appearing
-                className="inline-block tracking-tighter"
+                className="inline-block tracking-tighter animate-pulse"
                 transition={{
                   ...bounceAnimation.transition,
                   delay: i * staggerDuration,
@@ -74,7 +74,7 @@ export default function Header() {
                 key={i}
                 variants={letterVariants}
                 animate={bounceAnimation}
-                className="inline-block tracking-tighter"
+                className="inline-block tracking-tighter animate-pulse"
                 transition={{
                   ...bounceAnimation.transition,
                   delay:

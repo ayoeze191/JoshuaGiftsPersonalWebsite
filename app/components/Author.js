@@ -13,7 +13,7 @@ export default function Author() {
     });
   }, []);
   return (
-    <section className="max-w-5xl mx-auto px-6 py-20">
+    <section className="max-w-5xl mx-auto px-6 mt-24  md:mt-40">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* IMAGE */}
         <div

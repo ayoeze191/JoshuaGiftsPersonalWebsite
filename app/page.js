@@ -3,6 +3,7 @@ import Main from "./components/Main.js";
 import OutNow from "./components/OutNow.js";
 import Header from "./components/Header.js";
 import Author from "./components/Author.js";
+import Sponsorship from "./components/Sponsorship.js";
 export default function Home() {
   return (
     <div className="h-screen bg-gradient-to-b py-10 from-white to-blue-50 overflow-scroll">
@@ -10,6 +11,8 @@ export default function Home() {
         <div className="bg-blue-700 rounded-full w-2 h-full"></div>
       </div> */}
       <OutNow />
+      <Sponsorship />
+
       <Author />
       {/* <Main /> */}
     </div>
